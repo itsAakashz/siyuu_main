@@ -26,16 +26,16 @@ import time
 import requests
 from pyrogram import filters
 import nekos
-from Shikimori.imports.hmfull.src import hmfull
-from Shikimori import dispatcher, pbot
-from Shikimori.vars import SUPPORT_CHAT
-import Shikimori.modules.mongo.nsfw_mongo as sql
-from Shikimori.modules.log_channel import gloggable
+from FallenRobot.imports.hmfull.src import hmfull
+from FallenRobot import dispatcher, pbot
+from FallenRobot.vars import SUPPORT_CHAT
+import FallenRobot.modules.mongo.nsfw_mongo as sql
+from FallenRobot.modules.log_channel import gloggable
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, CallbackContext
-from Shikimori.modules.helper_funcs.filters import CustomFilters
-from Shikimori.modules.helper_funcs.chat_status import user_admin
+from FallenRobot.modules.helper_funcs.filters import CustomFilters
+from FallenRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html
 url_nsfw = "https://api.waifu.pics/nsfw/"
 
