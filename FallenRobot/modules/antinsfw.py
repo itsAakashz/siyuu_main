@@ -18,14 +18,14 @@ from pyrogram import filters
 from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
-from Shikimori.modules.nsfwscan import get_file_id_from_message
-from Shikimori import DRAGONS, dispatcher
-from Shikimori.mongo import db
-import Shikimori.modules.mongo.nsfw_mongo as sql
-from Shikimori.pyrogramee.telethonbasics import is_admin
-from Shikimori.events import register
-from Shikimori import telethn as tbot, arq, pbot
-from Shikimori.modules.sql import log_channel_sql as logsql
+from FallenRobot.modules.nsfwscan import get_file_id_from_message
+from FallenRobot import DRAGONS, dispatcher
+from FallenRobot.mongo import db
+import FallenRobot.modules.mongo.nsfw_mongo as sql
+from FallenRobot.pyrogramee.telethonbasics import is_admin
+from FallenRobot.events import register
+from FallenRobot import telethn as tbot, arq, pbot
+from FallenRobot.modules.sql import log_channel_sql as logsql
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
